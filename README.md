@@ -716,19 +716,3 @@ This API operates at **Level 3 (HATEOAS)**:
 3. Client PATCHes that link → `200` returned.
 
 The client never hardcodes URLs — it follows hypermedia controls.
-
----
-
-## 9. Self-Evaluation
-
-| Criterion | Points claimed | Justification |
-|-----------|---------------|---------------|
-| Functional & non-functional requirements | 4 | Both sets provided, clear and complete |
-| Model description | 4 | All 5 entities described with fields and links; relationships stated |
-| Operations description | 7 | Every endpoint has method, path, auth, query params, headers, request body, and full status code table |
-| Meaningful status codes | 7 | All codes mapped to specific codes and scenarios; 401 vs 403 correctly distinguished |
-| Richardson model | 7 | HATEOAS applied; level-3 justification provided with flow example |
-| Authentication | 7 | JWT structure (header + payload) shown; roles described; all auth errors mapped |
-| Pagination | 7 | All list endpoints paginated; envelope with `_links` for navigation |
-| Caching | 7 | Full table with Cache-Control per endpoint; rationale for `no-store` vs `public`; ETag noted |
-| **Total** | **50 / 50** | |
